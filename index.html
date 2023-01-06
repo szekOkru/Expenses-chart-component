@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="flex">
+      <div id="balance-container">
+        <div id="balance">
+          <p>My balance<br/><span>$921.48</span></p>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div id="week-container">
+        <div class="grid">
+          <div class="item1"><h1>Spending - Last 7 days</h1></div>
+
+          <div class="item2"><div class="rectangle" id="mon" style="height: 17vh;"></div></div>
+          <div class="item3"><div class="rectangle" id="tue" style="height: 34vh;"></div></div>
+          <div class="item4"><div class="rectangle" id="wed" style="height: 42vh;"></div></div>
+          <div class="item5"><div class="rectangle" id="thu" style="height: 31vh;"></div></div>
+          <div class="item6"><div class="rectangle" id="fri" style="height: 23vh;"></div></div>
+          <div class="item7"><div class="rectangle" id="sat" style="height: 43vh;"></div></div>
+          <div class="item8"><div class="rectangle" id="sun" style="height: 25vh;"></div></div>
+          
+          <div class="item9"><p>mon</p></div>
+          <div class="item10"><p>tue</p></div>
+          <div class="item11"><p>wed</p></div>
+          <div class="item12"><p>thu</p></div>
+          <div class="item13"><p>fri</p></div>
+          <div class="item14"><p>sat</p></div>
+          <div class="item15"><p>sun</p></div>
+
+          <div class="item16"><hr/></div>
+          
+          <div class="item17"><span>Total this month</span><p>$478.33</p></div>
+          <div class="item18"><p><br/>+2.4%</p><span>from last month</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>. 
+</div> -->

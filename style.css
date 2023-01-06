@@ -1,0 +1,271 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7e9dc;
+    font-size: 18px;
+    color: #fffaf4;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.flex {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;    
+}
+
+#balance-container, #week-container {
+    width: 40vw;
+    border-radius: 25px;
+
+}
+
+#balance-container {
+    background-color: #ec755d;
+    padding: 3.5vh;
+    
+}
+
+#week-container {
+    background-color: #fffcf7;
+    color: #a8a196;
+}
+
+#balance {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+#balance span {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.circle {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: auto;
+    right: 25px;
+    z-index: 1;
+}
+
+.circle:last-child {
+    background-color: black;
+    border: none;
+    right: 10px;
+    z-index: 0;
+}
+
+h1 {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.rectangle {
+    width: 100%;
+    height: 150px;
+    background-color: #ed755d;
+    border-radius: 5px;
+}
+
+.rectangle:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.item1, .item16 {
+    grid-column: 1/8;
+} 
+
+.item17, .item18 {
+    margin-top: 30px;
+}
+
+.item17 {
+    
+    grid-column: 1/4;
+}
+
+.item18 {
+    grid-column: 4/8;
+}
+
+.item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+    align-self: end;
+}
+
+.item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.item17 p {
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.item18 {
+    text-align: right;
+}
+
+.item18 p {
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.item1 {
+    margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 1440px) { 
+    #balance-container, #week-container {
+        width: 40vw;
+    }
+
+    .grid {
+        padding: 30px;
+    }
+
+    .item1 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        margin-bottom: 10px;
+    }
+
+    .item17, .item18 {
+        scale: 0.8;
+        margin-top: 5px;
+    }
+
+    body {
+        scale: 0.8;
+    }
+}
+
+@media only screen and (max-width: 1024px) { 
+    #balance-container, #week-container {
+        width: 70vw;
+    }
+
+    .grid {
+        padding: 30px;
+    }
+
+    .item1 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        margin-bottom: 10px;
+    }
+
+    .item17, .item18 {
+        scale: 0.8;
+        margin-top: 5px;
+    }
+
+    body {
+        scale: 0.8;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    #balance-container, #week-container {
+        width: 80vw;
+    }
+
+    .grid {
+        padding: 30px;
+    }
+
+    .item1 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        margin-bottom: 10px;
+    }
+
+    .item17, .item18 {
+        scale: 0.8;
+        margin-top: 5px;
+    }
+
+    body {
+        scale: 0.8;
+    }
+}
+
+@media only screen and (max-width: 425px) { 
+    #balance-container, #week-container {
+        width: 100vw;
+    }
+
+    .grid {
+        padding: 30px;
+    }
+
+    .item1 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        scale: 0.8;
+    }
+
+    .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        margin-bottom: 10px;
+    }
+
+    .item17, .item18 {
+        scale: 0.8;
+        margin-top: 5px;
+    }
+
+    body {
+        scale: 0.8;
+    }
+}
