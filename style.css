@@ -157,6 +157,7 @@ tooltip {
     border-radius: 15px;
     text-align: center;
     padding: 5px;
+    z-index: 1;
 }
 
 .hidden {
