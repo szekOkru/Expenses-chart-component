@@ -118,6 +118,7 @@ h1 {
 
 .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
     align-self: end;
+    position: relative;
 }
 
 .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
@@ -144,6 +145,26 @@ h1 {
 
 .item1 {
     margin-bottom: 10vh;
+}
+
+tooltip {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    min-width: 70px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
 
 @media only screen and (max-width: 1440px) { 
