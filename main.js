@@ -28,7 +28,7 @@ function showTooltip1() {
     if (visible1 == false)
     { document.getElementById("tool1").className = "visible"; visible1 = true; }
     else 
-    { document.getElementById("tool1").className = "hidden"; visibl1e = false; }
+    { document.getElementById("tool1").className = "hidden"; visible1 = false; }
 }
 
 let col2 = document.getElementById("tue");
